@@ -3,6 +3,7 @@ def welcome
   gets.strip
 end
 
+
 def help
 puts "I accept the following commands:
 - help : displays this help message
@@ -11,11 +12,13 @@ puts "I accept the following commands:
 - exit : exits this program"
 end
 
+
 def list(songs) 
   songs.each_with_index do |song, index|
     puts "#{index + 1}. #{song}"
   end
 end
+
 
 def play(songs)
   puts "please enter a song name or number:"
@@ -35,6 +38,7 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
 
 def run(songs)
   exit = false
