@@ -38,8 +38,10 @@ end
 
 def run(songs)
   exit = false
-  command = welcome
+  
   until exit == true
+  command = welcome
+  
     case command
     when "help"
       help
