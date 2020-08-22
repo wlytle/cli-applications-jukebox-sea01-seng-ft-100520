@@ -27,7 +27,7 @@ def play(songs)
   selected_song = gets.strip
   
   songs.each_with_index do |song, index|
-    index -= 1
+    index += 1
     if selected_song == song || 
       selected_song == index.to_s
       message = "Playing #{song}"
